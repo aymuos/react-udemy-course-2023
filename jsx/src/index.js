@@ -8,6 +8,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import App from './App';
 
 // React is the library that defines what a component is and how multiple components work together
 // React DOM is the library that knows how to get a component to show up in the browser and show in the browser , the target was to use react native in mobile devices
@@ -18,32 +19,44 @@ const el = document.getElementById('root');
 const root = ReactDOM.createRoot(el);
 
 //4
-function App() {
-    let message = 'Bye there!'
-    if (Math.random() > 0.5){
-        message= 'hello there !';
-
-    }
-   // we can display the javascript variables using the curly braces
-    // if we get to print the objects inside the react object it will show error
-    const date = new Date();
-    const name = 'Aymuos';
-    const time = date.toLocaleTimeString();
-    //return <h1>{message}</h1>;
-    //return <h1>{ new Date().toLocaleTimeString()}</h1>;  --> returning complex stuffs inside the return statement
-
-    // how to return multiple objects from the statement
-
-    return (
-        <h1>Hi My name is {name} and the time is {time}</h1>
-    );
-    // jsx is compiled by Babel to js that is returned to the HTML
-
-    //typical component layout is
-
-    // code to compute values we want to show in our jsx  and then the return type is content we want this component to show
-
-}
+// function App() {
+//     let message = 'Bye there!'
+//     if (Math.random() > 0.5){
+//         message= 'hello there !';
+//
+//     }
+//    // we can display the javascript variables using the curly braces
+//     // if we get to print the objects inside the react object it will show error
+//     // const date = new Date();
+//     // const name = 'Aymuos';
+//     // const time = date.toLocaleTimeString();
+//     //return <h1>{message}</h1>;
+//     //return <h1>{ new Date().toLocaleTimeString()}</h1>;  --> returning complex stuffs inside the return statement
+//
+//     // how to return multiple objects from the statement
+//
+//     // return (
+//     //     <h1>Hi My name is {name} and the time is {time}</h1>
+//     // );
+//     // jsx is compiled by Babel to js that is returned to the HTML
+//
+//     //typical component layout is
+//
+//     // code to compute values we want to show in our jsx  and then the return type is content we want this component to show
+//    const inputType= ' number ';
+//     const minValue = 5 ;
+//
+//
+//     // return <input type= "number"
+//     //               min={ 5 }
+//     //               max={10}
+//     // list={[1,2,3]}
+//     //               style = {{border:' 3px solid red'}}
+//     // />
+//
+//     return (<textarea autoFocus={true} maxLength={5}spellCheck style={{border : '5px blue',paddingTop:'1px'}} placeholder="Hi there" />);
+// // }
+// }
 
 // 5
 

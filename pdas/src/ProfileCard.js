@@ -1,9 +1,21 @@
-function ProfileCard(props){
+//function ProfileCard(props){
+function ProfileCard({title ,handle}){
+    console.log({title,handle})
+    // const title= props.title;
+    // const handle = props.handle;
     // it will receive the first js props object
+
+    //deconstructing
+
+    //const {title , handle} = props ;
+    // this is equal to the above line 3 and 4
+
+    // its often we don't care about the whole props object
+
     return (
         <div>
-            <div>Title is {props.title} </div>
-            <div>Handle is {props.handle} </div>
+            <div>Title is {title} </div>
+            <div>Handle is {handle} </div>
         </div>
     );
 }

@@ -18,7 +18,7 @@ function App(){
                          3 Examples
                     </p>
                 </div>
-            </section>s
+            </section>
             {/* layout of our cards */ }
 
             <div className="container">

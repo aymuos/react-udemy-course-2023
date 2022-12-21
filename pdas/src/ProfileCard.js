@@ -1,5 +1,5 @@
 //function ProfileCard(props){
-function ProfileCard({title ,handle}){
+function ProfileCard({title ,handle , img , textOnNotLoad}){
     console.log({title,handle})
     // const title= props.title;
     // const handle = props.handle;
@@ -14,8 +14,10 @@ function ProfileCard({title ,handle}){
 
     return (
         <div>
+            <img src ={img} alt={textOnNotLoad} />
             <div>Title is {title} </div>
             <div>Handle is {handle} </div>
+
         </div>
     );
 }

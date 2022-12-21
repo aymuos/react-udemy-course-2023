@@ -9,13 +9,10 @@ function App(){
         <div>
             <div>Personal Digital Assistants</div>
 
-            <img src={AlexaImage} />
-            <img src={SiriImage} />
-            // for hosted images use normal html images , same for fonts
+            <ProfileCard title="Alexa"handle="@alexa99" img={AlexaImage} textOnNotLoad="Alexa Image"/>
+            <ProfileCard title="Cortana"handle="@corrtunu" img={CortanaImage} textOnNotLoad="Cortana Image" />
+            <ProfileCard title="Siri"handle="@omgitsSiri" img={SiriImage} textOnNotLoad="Siri Image"/>
 
-            <ProfileCard title="Alexa"handle="@alexa99" />
-            <ProfileCard title="Cortana"handle="@corrtunu" />
-            <ProfileCard title="Siri"handle="@omgitsSiri" />
         </div>
     );
 }
